@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_map"
+    app:startDestination="@id/postsFragment">
+
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.revature.javarefresherwithtesting.ui.posts.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts" >
+        <action
+            android:id="@+id/action_postsFragment_to_addEditPostFragment"
+            app:destination="@id/addEditPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEditPostFragment"
+        android:name="com.revature.javarefresherwithtesting.ui.addpost.AddEditPostFragment"
+        android:label="fragment_add_edit_post"
+        tools:layout="@layout/fragment_add_edit_post">
+        <action
+            android:id="@+id/action_addEditPostFragment_to_postsFragment"
+            app:destination="@id/postsFragment"
+            app:popUpTo="@id/postsFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="postToEdit"
+            app:argType="com.revature.javarefresherwithtesting.data.entities.Post"
+            app:nullable="true" />
+    </fragment>
+</navigation>

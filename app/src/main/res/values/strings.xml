@@ -1,0 +1,20 @@
+<resources>
+    // Common
+    <string name="app_name">Java Refresher with Testing</string>
+
+    // Posts
+    <string name="item_post_id">ID: %1$d</string>
+    <string name="item_post_userid">User ID: %1$d</string>
+    <string name="item_post_title">Title: %1$s</string>
+    <string name="item_post_body">Body: %1$s</string>
+    <string name="info_no_posts">No posts to display</string>
+
+    // Post Form
+    <string name="hint_title">Title</string>
+    <string name="hint_body">Body</string>
+    <string name="button_addpost">Add Post</string>
+    <string name="button_savepost">Save Post</string>
+
+    // Menu
+    <string name="menu_label_delete_all_posts">Delete all posts</string>
+</resources>
